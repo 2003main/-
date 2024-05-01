@@ -140,6 +140,12 @@ void uart4_report_imu(short aacx,short aacy,short aacz,short gyrox,short gyroy,s
 	tbuf[23]=yaw&0XFF;
 	uart4_niming_report(0XAF,tbuf,28);//∑…øÿœ‘ æ÷°,0XAF
 } 
-  
-
-
+  void USART4_IRQHandler(void)
+{
+    if (USART_GetITStatus(UART4, USART_IT_RXNE) == SET)
+    {
+        extern uint8_t im948_ctl;
+        im948_ctl = (uint8_t)USART_ReceiveData(UART4);
+        USART_ClearITPendingBit(UART4, USART_IT_RXNE);
+    }
+}

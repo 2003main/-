@@ -50,7 +50,6 @@ void duoji_Init(void)
 **************************************************************************/ 
 void work(void)
 {
-	duoji_Init();
 	Go_Centre();
 	task1();
   task2(); 	
@@ -79,10 +78,10 @@ void task1(void)
 		{
 			case 0:L_Front_Count(SearchRun,2);break;
 			case 1:
-			if(wukuai[green]!=0){now_position=green;Time_delay_ms(500);Car_TurnToAngle4(color[green]);F_adjust_pose();L_Front_Count(SearchRun,2);}
-			else {now_position=blue;Time_delay_ms(500);Car_TurnToAngle4(color[blue]);F_adjust_pose();L_Front_Count(SearchRun,2);}
+			if(wukuai[green]!=0){now_position=green;Time_delay_ms(500);ToAngle(color[green]);F_adjust_pose();L_Front_Count(SearchRun,2);}
+			else {now_position=blue;Time_delay_ms(500);ToAngle(color[blue]);F_adjust_pose();L_Front_Count(SearchRun,2);}
 			break;
-			case 2:{now_position=blue;Time_delay_ms(500);Car_TurnToAngle4(color[blue]);F_adjust_pose();L_Front_Count(SearchRun,2);}break;			
+			case 2:{now_position=blue;Time_delay_ms(500);ToAngle(color[blue]);F_adjust_pose();L_Front_Count(SearchRun,2);}break;			
 		}
 		Time_delay_ms(500);//时间可以减小
 		color_discrimination();

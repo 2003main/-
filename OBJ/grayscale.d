@@ -1,7 +1,7 @@
 ..\obj\grayscale.o: ..\HARDWARE\grayscale.c
 ..\obj\grayscale.o: ..\USER\stm32f4xx.h
 ..\obj\grayscale.o: ..\CORE\core_cm4.h
-..\obj\grayscale.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\grayscale.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\grayscale.o: ..\CORE\core_cmInstr.h
 ..\obj\grayscale.o: ..\CORE\core_cmFunc.h
 ..\obj\grayscale.o: ..\CORE\core_cm4_simd.h

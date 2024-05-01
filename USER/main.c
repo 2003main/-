@@ -1,6 +1,7 @@
 #include "sys.h"
 #include "delay.h"
 #include "Usart1.h"
+#include "Usart3.h"
 #include "led.h"
 #include "TB6612.h"
 #include "Usart6.h"
@@ -26,6 +27,8 @@
 #include "gray_go.h"
 #include "work.h"
 #include "bsys.h"
+#include "im948_CMD.h"
+#include "IM948_TurnAngle.h"
 /**********************接线***************************/
 /*前八路灰度->八路灰度1  后八路灰度->八路灰度2*/
 /*前一路灰度->HDIO2   中一路灰度->HDIO3 后一路灰度->HDIO4*/
@@ -57,6 +60,7 @@ void Init()
 	LED_Init();		        //LED初始化
 	MOTOR_Init();
 	Usart1_Init(115200);//Openmv
+	USART3_Init(115200);
 	Uart4_Init(115200);//printf
 	Uart5_Init(9600);//蓝牙
 	Usart6_Init(115200);//串行舵机
@@ -69,7 +73,9 @@ void Init()
 	TCS34725_GPIO_Init();TCS34725_Init();integrationTime(33);//TCS34725初始化
 	setPWMFreq(50);                //设置PCA9685频率为50HZ
 	PCA9685_write(PCA9685_MODE1,0x0);//复位PCA9685	
-	delay_ms(3000);//等待六轴初始化
+	IM948_init();//IM948初始化
+	duoji_Init();
+	delay_ms(3000);
 }
 void Try()
 {
@@ -130,21 +136,10 @@ void Try()
 
 int main(void)
 {
+	
   Init();
-//	duoji_Init();
-//	//Try();
-//   
-//	Go_Centre();
-//	task1();
-	//Car_TurnToAngle4(180);
-	//Car_TurnToAngle4(-180);	
-	//task();
-	//work();
-//	while(1)
-//	{
-  
-//	}
-			
-
+	Go_Centre();
+	task1();
+	
+	
 }
-

@@ -1,9 +1,9 @@
 ..\obj\inv_mpu.o: ..\MPU6050\inv_mpu.c
-..\obj\inv_mpu.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\inv_mpu.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-..\obj\inv_mpu.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\inv_mpu.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\string.h
-..\obj\inv_mpu.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\math.h
+..\obj\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\inv_mpu.o: ..\MPU6050\inv_mpu.h
 ..\obj\inv_mpu.o: ..\USER\stm32f4xx.h
 ..\obj\inv_mpu.o: ..\CORE\core_cm4.h

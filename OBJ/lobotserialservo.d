@@ -1,7 +1,7 @@
 ..\obj\lobotserialservo.o: ..\HARDWARE\LobotSerialServo.c
 ..\obj\lobotserialservo.o: ..\USER\stm32f4xx.h
 ..\obj\lobotserialservo.o: ..\CORE\core_cm4.h
-..\obj\lobotserialservo.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\lobotserialservo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\lobotserialservo.o: ..\CORE\core_cmInstr.h
 ..\obj\lobotserialservo.o: ..\CORE\core_cmFunc.h
 ..\obj\lobotserialservo.o: ..\CORE\core_cm4_simd.h
@@ -35,8 +35,8 @@
 ..\obj\lobotserialservo.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\lobotserialservo.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\lobotserialservo.o: ..\HARDWARE\LobotSerialServo.h
-..\obj\lobotserialservo.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
-..\obj\lobotserialservo.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\string.h
+..\obj\lobotserialservo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\lobotserialservo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\lobotserialservo.o: ..\SYSTEM\Usart6\Usart6.h
-..\obj\lobotserialservo.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\lobotserialservo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\lobotserialservo.o: ..\HARDWARE\bool.h

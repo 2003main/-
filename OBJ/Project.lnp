@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp.sp
+--cpu=Cortex-M4.fp
 "..\obj\main.o"
 "..\obj\stm32f4xx_it.o"
 "..\obj\system_stm32f4xx.o"
@@ -22,6 +22,7 @@
 "..\obj\time_go.o"
 "..\obj\timer.o"
 "..\obj\bsys.o"
+"..\obj\encoder.o"
 "..\obj\delay.o"
 "..\obj\sys.o"
 "..\obj\usart1.o"

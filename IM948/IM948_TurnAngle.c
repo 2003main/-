@@ -6,9 +6,9 @@ extern float Yaw;
 void IM948_init()
 {
 	// 唤醒传感器，并配置好传感器工作参数，然后开启主动上报---------------
-		delay_ms(3000);
+
     Cmd_03();// 2 唤醒传感器
-		Cmd_14();//恢复出厂设置
+		Cmd_05();
     /**
        * 设置设备参数
      * @param accStill    惯导-静止状态加速度阀值 单位dm/s?
@@ -22,7 +22,7 @@ void IM948_init()
      * @param compassFilter 磁力计滤波系数[取值0-9],数值越大越平稳但实时性越差
      * @param Cmd_ReportTag 功能订阅标识
      */
-    Cmd_12(5, 255, 0,  0, 0, 50, 0, 0, 0, 0x40);// 7 设置设备参数(内容1)
+    Cmd_12(5, 255, 0,  1, 0, 50, 1, 2, 5, 0x40);// 7 设置设备参数(内容1)
     Cmd_19();// 4 开启数据主动上报
 }
 /****************************************************************************
@@ -38,7 +38,21 @@ void IM948_init()
 void ToAngle(int angle)        //暂时未使用PID
 {
 
-	
+		if(angle ==180||angle==-180)
+	{
+	  if(angle==180)
+		{
+		  ToAngle(90);
+			ToAngle(178);
+		}
+		if(angle==-180)
+		{
+		  ToAngle(-90);
+			ToAngle(-178);
+		}
+	}
+	else
+	{
 			 while(Yaw>angle)             			//右转
 				 { 
 					   Set_Motor(35,-35);
@@ -47,5 +61,7 @@ void ToAngle(int angle)        //暂时未使用PID
 				 { 
 					   Set_Motor(-35,35);
 				 }
-			Set_Motor(0,0);delay_ms(50);	
+				 if(angle>0){	Set_Motor(35,-35);delay_ms(70);Set_Motor(0,0);}
+				 else {Set_Motor(-35,35);delay_ms(70);Set_Motor(0,0);}
+	}
 }

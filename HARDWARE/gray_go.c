@@ -7,16 +7,16 @@ void SearchRun(void)
 {
 	if(F2==1&&F3==1&&F4==0&&F5==0&&F6==1&&F7==1)   Set_Motor(28,28);
 	  //ÓÒÆ«   ÐÂ°ËÂ·»Ò¶È  ºÚ 0 °× 1  F7×óF2ÓÒ
-  else if(F7==1&&F6==1&&F5==0&&F4==1&&F3==1&&F2==1)   {Set_Motor(23,55);delay_ms(5);}
-  else if(F7==1&&F6==0&&F5==0&&F4==1&&F3==1&&F2==1)   Set_Motor(25,60);
-  else if(F7==1&&F6==0&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(25,65);
-  else if(F7==0&&F6==0&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(30,75);
-  else if(F7==0&&F6==1&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(-40,40);
+  else if(F7==1&&F6==1&&F5==0&&F4==1&&F3==1&&F2==1)   {Set_Motor(18,38);delay_ms(5);}
+  else if(F7==1&&F6==0&&F5==0&&F4==1&&F3==1&&F2==1)   Set_Motor(14,42);
+  else if(F7==1&&F6==0&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(12,44);
+  else if(F7==0&&F6==0&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(6,50);
+  else if(F7==0&&F6==1&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(-35,35);
 	  //×óÆ«
-  else if(F7==1&&F6==1&&F5==1&&F4==0&&F3==1&&F2==1)   {Set_Motor(50,28);delay_ms(5);}
-  else if(F7==1&&F6==1&&F5==1&&F4==0&&F3==0&&F2==1)   Set_Motor(55,30);
-  else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==0&&F2==1)   Set_Motor(60,30);
-  else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==0&&F2==0)   Set_Motor(70,30);
+  else if(F7==1&&F6==1&&F5==1&&F4==0&&F3==1&&F2==1)   {Set_Motor(38,18);delay_ms(5);}
+  else if(F7==1&&F6==1&&F5==1&&F4==0&&F3==0&&F2==1)   Set_Motor(42,14);
+  else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==0&&F2==1)   Set_Motor(44,12);
+  else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==0&&F2==0)   Set_Motor(50,6);
   else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==1&&F2==0)   Set_Motor(35,-35);
 
   else                                                              Set_Motor(28,28);
@@ -28,16 +28,16 @@ void anti_SearchRun(void)
 	//³µÕý
   if(D1==1&&D2==1&&D3==1&&D4==0&&D5==0&&D6==1&&D7==1&&D8==1)        Set_Motor(-28,-28);
 //ÓÒÆ«
-  else if(D2==1&&D3==1&&D4==1&&D5==0&&D6==1&&D7==1)   {Set_Motor(-23,-55);delay_ms(5);}
-  else if(D2==1&&D3==1&&D4==1&&D5==0&&D6==0&&D7==1)   Set_Motor(-25,-60);
-  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==0&&D7==1)   Set_Motor(-25,-65);
-  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==0&&D7==0)   Set_Motor(-30,-75);
-  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==1&&D7==0)   Set_Motor(40,-40);
+  else if(D2==1&&D3==1&&D4==1&&D5==0&&D6==1&&D7==1)   {Set_Motor(-18,-38);delay_ms(5);}
+  else if(D2==1&&D3==1&&D4==1&&D5==0&&D6==0&&D7==1)   Set_Motor(-14,-42);
+  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==0&&D7==1)   Set_Motor(-12,-44);
+  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==0&&D7==0)   Set_Motor(-6,-50);
+  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==1&&D7==0)   Set_Motor(35,-35);
 //×óÆ«
-  else if(D2==1&&D3==1&&D4==0&&D5==1&&D6==1&&D7==1)   {Set_Motor(-50,-28);delay_ms(5);}
-  else if(D2==1&&D3==0&&D4==0&&D5==1&&D6==1&&D7==1)   Set_Motor(-55,-30);
-  else if(D2==1&&D3==0&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-60,-30);
-  else if(D2==0&&D3==0&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-70,-30);
+  else if(D2==1&&D3==1&&D4==0&&D5==1&&D6==1&&D7==1)   {Set_Motor(-38,-18);delay_ms(5);}
+  else if(D2==1&&D3==0&&D4==0&&D5==1&&D6==1&&D7==1)   Set_Motor(-42,-14);
+  else if(D2==1&&D3==0&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-44,-12);
+  else if(D2==0&&D3==0&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-50,-6);
   else if(D2==0&&D3==1&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-35,35);
   else                                                              Set_Motor(-28,-28);
 	
@@ -67,3 +67,40 @@ void anti_SearchRun(void)
 //	
 //	
 //}
+void LIAP(void)//Ç°½øÑ²Ïß·ÅÖÃ
+{
+	if(F2==1&&F3==1&&F4==0&&F5==0&&F6==1&&F7==1)   Set_Motor(18,18);
+	  //ÓÒÆ«   ÐÂ°ËÂ·»Ò¶È  ºÚ 0 °× 1  F7×óF2ÓÒ
+  else if(F7==1&&F6==1&&F5==0&&F4==1&&F3==1&&F2==1)   {Set_Motor(8,28);delay_ms(5);}
+  else if(F7==1&&F6==0&&F5==0&&F4==1&&F3==1&&F2==1)   Set_Motor(4,32);
+  else if(F7==1&&F6==0&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(2,34);
+  else if(F7==0&&F6==0&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(-4,40);
+  else if(F7==0&&F6==1&&F5==1&&F4==1&&F3==1&&F2==1)   Set_Motor(-25,25);
+	  //×óÆ«
+  else if(F7==1&&F6==1&&F5==1&&F4==0&&F3==1&&F2==1)   {Set_Motor(28,8);delay_ms(5);}
+  else if(F7==1&&F6==1&&F5==1&&F4==0&&F3==0&&F2==1)   Set_Motor(32,4);
+  else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==0&&F2==1)   Set_Motor(34,2);
+  else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==0&&F2==0)   Set_Motor(40,-4);
+  else if(F7==1&&F6==1&&F5==1&&F4==1&&F3==1&&F2==0)   Set_Motor(25,-25);
+
+  else                                                              Set_Motor(18,18);
+}
+void anti_LIAP(void)//ºóÍÈÑ²Ïß·ÅÖÃ
+{
+	//³µÕý
+  if(D1==1&&D2==1&&D3==1&&D4==0&&D5==0&&D6==1&&D7==1&&D8==1)        Set_Motor(-18,-18);
+//ÓÒÆ«
+  else if(D2==1&&D3==1&&D4==1&&D5==0&&D6==1&&D7==1)   {Set_Motor(-8,-28);delay_ms(5);}
+  else if(D2==1&&D3==1&&D4==1&&D5==0&&D6==0&&D7==1)   Set_Motor(-4,-32);
+  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==0&&D7==1)   Set_Motor(-2,-34);
+  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==0&&D7==0)   Set_Motor(4,-40);
+  else if(D2==1&&D3==1&&D4==1&&D5==1&&D6==1&&D7==0)   Set_Motor(25,-25);
+//×óÆ«
+  else if(D2==1&&D3==1&&D4==0&&D5==1&&D6==1&&D7==1)   {Set_Motor(-28,-8);delay_ms(5);}
+  else if(D2==1&&D3==0&&D4==0&&D5==1&&D6==1&&D7==1)   Set_Motor(-32,-4);
+  else if(D2==1&&D3==0&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-34,-2);
+  else if(D2==0&&D3==0&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-40,4);
+  else if(D2==0&&D3==1&&D4==1&&D5==1&&D6==1&&D7==1)   Set_Motor(-25,25);
+  else                                                              Set_Motor(-18,-18);
+	
+}

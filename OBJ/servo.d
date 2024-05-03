@@ -3,7 +3,7 @@
 ..\obj\servo.o: ..\SYSTEM\sys\sys.h
 ..\obj\servo.o: ..\USER\stm32f4xx.h
 ..\obj\servo.o: ..\CORE\core_cm4.h
-..\obj\servo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\servo.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\servo.o: ..\CORE\core_cmInstr.h
 ..\obj\servo.o: ..\CORE\core_cmFunc.h
 ..\obj\servo.o: ..\CORE\core_cm4_simd.h

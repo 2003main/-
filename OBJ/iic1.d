@@ -2,7 +2,7 @@
 ..\obj\iic1.o: ..\HARDWARE\IIC1.h
 ..\obj\iic1.o: ..\USER\stm32f4xx.h
 ..\obj\iic1.o: ..\CORE\core_cm4.h
-..\obj\iic1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\iic1.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\iic1.o: ..\CORE\core_cmInstr.h
 ..\obj\iic1.o: ..\CORE\core_cmFunc.h
 ..\obj\iic1.o: ..\CORE\core_cm4_simd.h

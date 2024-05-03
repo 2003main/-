@@ -25,4 +25,6 @@
 
 void SearchRun(void);
 void anti_SearchRun(void);
+void LIAP(void);
+void anti_LIAP(void);
 #endif

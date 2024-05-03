@@ -4,7 +4,7 @@
 ..\obj\action.o: ..\SYSTEM\sys\sys.h
 ..\obj\action.o: ..\USER\stm32f4xx.h
 ..\obj\action.o: ..\CORE\core_cm4.h
-..\obj\action.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\action.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\action.o: ..\CORE\core_cmInstr.h
 ..\obj\action.o: ..\CORE\core_cmFunc.h
 ..\obj\action.o: ..\CORE\core_cm4_simd.h

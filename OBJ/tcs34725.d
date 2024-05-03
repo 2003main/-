@@ -3,7 +3,7 @@
 ..\obj\tcs34725.o: ..\HARDWARE\IIC1.h
 ..\obj\tcs34725.o: ..\USER\stm32f4xx.h
 ..\obj\tcs34725.o: ..\CORE\core_cm4.h
-..\obj\tcs34725.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\tcs34725.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\tcs34725.o: ..\CORE\core_cmInstr.h
 ..\obj\tcs34725.o: ..\CORE\core_cmFunc.h
 ..\obj\tcs34725.o: ..\CORE\core_cm4_simd.h

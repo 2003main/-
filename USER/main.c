@@ -4,6 +4,7 @@
 #include "Usart3.h"
 #include "led.h"
 #include "TB6612.h"
+#include "encoder.h"
 #include "Usart6.h"
 #include "LobotSerialServo.h"
 #include "bool.h"
@@ -29,6 +30,7 @@
 #include "bsys.h"
 #include "im948_CMD.h"
 #include "IM948_TurnAngle.h"
+/*************定时器3 time_go和编码器冲突*************/
 /**********************接线***************************/
 /*前八路灰度->八路灰度1  后八路灰度->八路灰度2*/
 /*前一路灰度->HDIO2   中一路灰度->HDIO3 后一路灰度->HDIO4*/
@@ -70,12 +72,12 @@ void Init()
 	BEEP_Init();
 	OLED_Init();
 	MPU_Init();mpu_dmp_init();
+	Encoder_Init_TIM8();Encoder_Init_TIM4();Encoder_Init_TIM3();Encoder_Init_TIM1();//编码器初始化
 	TCS34725_GPIO_Init();TCS34725_Init();integrationTime(33);//TCS34725初始化
 	setPWMFreq(50);                //设置PCA9685频率为50HZ
 	PCA9685_write(PCA9685_MODE1,0x0);//复位PCA9685	
 	IM948_init();//IM948初始化
 	duoji_Init();
-	delay_ms(3000);
 }
 void Try()
 {
@@ -138,8 +140,14 @@ int main(void)
 {
 	
   Init();
+	
+	//task_two_catch();
 	Go_Centre();
 	task1();
-	
+  //L_Centre_Count(SearchRun,6);
+ // L_Centre_Count(LIAP,6);
+   //L_Centre_Count(anti_SearchRun,6);
+	//L_Centre_Count(anti_LIAP,6);
+	//ToAngle(180);
 	
 }

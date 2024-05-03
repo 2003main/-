@@ -4,7 +4,7 @@
 ..\obj\im948_turnangle.o: ..\SYSTEM\sys\sys.h
 ..\obj\im948_turnangle.o: ..\USER\stm32f4xx.h
 ..\obj\im948_turnangle.o: ..\CORE\core_cm4.h
-..\obj\im948_turnangle.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\im948_turnangle.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\im948_turnangle.o: ..\CORE\core_cmInstr.h
 ..\obj\im948_turnangle.o: ..\CORE\core_cmFunc.h
 ..\obj\im948_turnangle.o: ..\CORE\core_cm4_simd.h
@@ -39,5 +39,5 @@
 ..\obj\im948_turnangle.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\im948_turnangle.o: ..\SYSTEM\delay\delay.h
 ..\obj\im948_turnangle.o: ..\IM948\im948_CMD.h
-..\obj\im948_turnangle.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\im948_turnangle.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\im948_turnangle.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\im948_turnangle.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\math.h

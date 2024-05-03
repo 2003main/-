@@ -1,7 +1,7 @@
 ..\obj\iic3.o: ..\HARDWARE\IIC3.c
 ..\obj\iic3.o: ..\USER\stm32f4xx.h
 ..\obj\iic3.o: ..\CORE\core_cm4.h
-..\obj\iic3.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\iic3.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\iic3.o: ..\CORE\core_cmInstr.h
 ..\obj\iic3.o: ..\CORE\core_cmFunc.h
 ..\obj\iic3.o: ..\CORE\core_cm4_simd.h

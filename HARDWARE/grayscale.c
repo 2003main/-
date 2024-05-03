@@ -115,6 +115,7 @@ void RL_Centre_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-25,-25);delay_ms(10);
 	 Set_Motor(0,0);
 }
 /************左右后一路灰度****************/
@@ -148,6 +149,7 @@ void RL_Back_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-25,-25);delay_ms(10);
 	 Set_Motor(0,0);
 }
 ///****************左右前二路灰度外侧************/
@@ -181,6 +183,7 @@ void RL_Front_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-25,-25);delay_ms(10);
 	 Set_Motor(0,0);
 }
 
@@ -208,6 +211,7 @@ void R_Front_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-25,-25);delay_ms(10);
 	 Set_Motor(0,0);
 }
 
@@ -233,6 +237,7 @@ void L_Front_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-28,-28);delay_ms(10);
 	 Set_Motor(0,0);
 }
 /*****************右中一路灰度**************/
@@ -257,6 +262,7 @@ void R_Centre_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-25,-25);delay_ms(10);
 	 Set_Motor(0,0);
 }
 ///*****************左中一路灰度**************/
@@ -281,7 +287,7 @@ void L_Centre_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
-	 Set_Motor(0,0);
+	Set_Motor(-25,-25);delay_ms(10);Set_Motor(0,0);
 }
 ///****************右后一路灰度******************/
 void R_Back_Count(void (*d)(void),int ti)
@@ -305,6 +311,7 @@ void R_Back_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-25,-25);delay_ms(10);
 	 Set_Motor(0,0);
 }
 ///****************左后一路灰度******************/
@@ -329,5 +336,6 @@ void L_Back_Count(void (*d)(void),int ti)
 			break;
 		}
 	}
+	 Set_Motor(-25,-25);delay_ms(10);
 	 Set_Motor(0,0);
 }

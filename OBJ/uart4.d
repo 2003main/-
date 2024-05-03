@@ -3,7 +3,7 @@
 ..\obj\uart4.o: ..\SYSTEM\sys\sys.h
 ..\obj\uart4.o: ..\USER\stm32f4xx.h
 ..\obj\uart4.o: ..\CORE\core_cm4.h
-..\obj\uart4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\uart4.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\uart4.o: ..\CORE\core_cmInstr.h
 ..\obj\uart4.o: ..\CORE\core_cmFunc.h
 ..\obj\uart4.o: ..\CORE\core_cm4_simd.h
@@ -37,10 +37,10 @@
 ..\obj\uart4.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\uart4.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\uart4.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\uart4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\uart4.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\uart4.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 ..\obj\uart4.o: ..\SYSTEM\Usart1\Usart1.h
-..\obj\uart4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\uart4.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\uart4.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\uart4.o: ..\FreeRTOS\include\portable.h
 ..\obj\uart4.o: ..\FreeRTOS\include\deprecated_definitions.h

@@ -10,6 +10,7 @@
 #include "delay.h"
 #include "beep.h"
 #include "oled.h"
+#include "IM948_TurnAngle.h"
 int32_t i;
 int32_t now_color;                 //储存当前识别的颜色
 int32_t last_color;                //储存上一次识别的颜色——现特用于任务一case_three
@@ -76,12 +77,12 @@ void task1(void)
 	{
 		switch(count)
 		{
-			case 0:L_Front_Count(SearchRun,2);break;
+			case 0:L_Front_Count(LIAP,2);break;
 			case 1:
-			if(wukuai[green]!=0){now_position=green;Time_delay_ms(500);ToAngle(color[green]);F_adjust_pose();L_Front_Count(SearchRun,2);}
-			else {now_position=blue;Time_delay_ms(500);ToAngle(color[blue]);F_adjust_pose();L_Front_Count(SearchRun,2);}
+			if(wukuai[green]!=0){now_position=green;Time_delay_ms(500);ToAngle(color[green]);F_adjust_pose();L_Front_Count(LIAP,2);}
+			else {now_position=blue;Time_delay_ms(500);ToAngle(color[blue]);F_adjust_pose();L_Front_Count(LIAP,2);}
 			break;
-			case 2:{now_position=blue;Time_delay_ms(500);ToAngle(color[blue]);F_adjust_pose();L_Front_Count(SearchRun,2);}break;			
+			case 2:{now_position=blue;Time_delay_ms(500);ToAngle(color[blue]);F_adjust_pose();L_Front_Count(LIAP,2);}break;			
 		}
 		Time_delay_ms(500);//时间可以减小
 		color_discrimination();
@@ -165,12 +166,12 @@ void task2(void)
 **************************************************************************/ 
 void case_one(void)
 {	
-	crazyMe(qianzhua_you,90,0,5,80);      //抓住物块
-	crazyMe(qianzhua_zuo,90,180,5,80);
-	L_Front_Count(SearchRun,2);
+	//crazyMe(qianzhua_you,90,0,5,80);      //抓住物块
+	//crazyMe(qianzhua_zuo,90,180,5,80);
+	L_Front_Count(LIAP,2);
 	Time_go(Car_Retreat28,120);
-	crazyMe(qianzhua_you,0,90,5,80);      //放开物块
-	crazyMe(qianzhua_zuo,180,90,5,80);
+//	crazyMe(qianzhua_you,0,90,5,80);      //放开物块
+//	crazyMe(qianzhua_zuo,180,90,5,80);
 	wukuai[now_color]=0;
 	L_Centre_Count(anti_SearchRun,6);    //退回到中心
 	F_adjust_pose();                     //调整位置
@@ -189,8 +190,8 @@ void case_two(void)
 	Car_TurnToAngle4(color[now_color]);//转到目标角度
 	F_adjust_pose();                     //调整位置
 	now_position=now_color;
-	L_Back_Count(SearchRun,2);       //到达放物块区
-	L_Front_Count(SearchRun,4);       //到达放物块区
+	L_Back_Count(LIAP,2);       //到达放物块区
+	L_Front_Count(LIAP,4);       //到达放物块区
 	//加Time_go后退
 	Time_go(Car_Retreat28,180);
 	crazyMe(daduoji,90,90,5,80);        //下降
@@ -215,7 +216,7 @@ void case_three(void)
 	Car_TurnToAngle4(color[now_color]);   //转到目标角度
 	Time_go(Car_Advance30,60);                   //调整位置
 	now_position=now_color;
-	L_Front_Count(SearchRun,2);          //到达阻碍物块前
+	L_Front_Count(LIAP,2);          //到达阻碍物块前
 	last_color=now_color;                 
 	color_discrimination();               //识别阻碍物块的颜色，并更改now_color的值
 	color_distribution_one();
@@ -232,8 +233,8 @@ void case_three(void)
 		B_adjust_pose();                           //调整位置
 		last_position=now_color; 
 		now_position=now_color;
-		L_Back_Count(SearchRun,2);           //到达放物块区
-		L_Front_Count(SearchRun,4);           //到达放物块区
+		L_Back_Count(LIAP,2);           //到达放物块区
+		L_Front_Count(LIAP,4);           //到达放物块区
 		//加time_go 后退
 		Time_go(Car_Retreat28,150);
 		crazyMe(qianzhua_you,0,90,5,80);       //放开阻碍物块
@@ -245,8 +246,8 @@ void case_three(void)
 		F_adjust_pose();                         //调整位置
 		now_position=last_color;
 		now_color=last_color;
-		L_Back_Count(SearchRun,2);           //到达放物块区
-		L_Front_Count(SearchRun,4);           //到达放物块区
+		L_Back_Count(LIAP,2);           //到达放物块区
+		L_Front_Count(LIAP,4);           //到达放物块区
 		Time_go(Car_Retreat28,150);
 		crazyMe(daduoji,40,90,5,80);            //下降
 		crazyMe(taotong_1,90,90,5,80);          //放开物块
@@ -270,8 +271,8 @@ void case_three(void)
 		Car_TurnToAngle4(color[now_color]);   //转到目标角度
 		B_adjust_pose();                       //调整位置
 		now_position=now_color;
-		L_Back_Count(SearchRun,2);           //到达放物块区
-		L_Front_Count(SearchRun,4);           //到达放物块区
+		L_Back_Count(LIAP,2);           //到达放物块区
+		L_Front_Count(LIAP,4);           //到达放物块区
 		//time_go后退
 		Time_go(Car_Retreat28,150);
 		crazyMe(qianzhua_you,0,90,5,80);     //放开阻碍物块  
@@ -290,8 +291,8 @@ void case_three(void)
 		Car_TurnToAngle4(color[now_color]);    //转到目标角度（阻碍物块的路径上）
 	  F_adjust_pose();                         //调整位置
 		now_position=now_color;
-		L_Back_Count(SearchRun,2);           //到达放物块区
-		L_Front_Count(SearchRun,4);           //到达放物块区
+		L_Back_Count(LIAP,2);           //到达放物块区
+		L_Front_Count(LIAP,4);           //到达放物块区
 		//time_go后退
 		Time_go(Car_Retreat28,150);
 		crazyMe(qianzhua_you,0,90,5,80);       //放开阻碍物块
@@ -303,8 +304,8 @@ void case_three(void)
 		Car_TurnToAngle4(color[last_color]);   //转到目标角度
 		F_adjust_pose();                        //调整位置
 		now_position=now_color;
-		L_Back_Count(SearchRun,2);           //到达放物块区
-		L_Front_Count(SearchRun,4);           //到达放物块区
+		L_Back_Count(LIAP,2);           //到达放物块区
+		L_Front_Count(LIAP,4);           //到达放物块区
 		Time_go(Car_Retreat28,150);
 		crazyMe(daduoji,90,90,5,80);            //下降
 		crazyMe(taotong_1,90,90,5,80);          //放开物块
@@ -442,7 +443,9 @@ void color_discrimination(void)
 	  else if(2*G_Dat>(2*R_Dat+B_Dat)&&G_Dat>150)                                                {now_color=green;beep(1);}//绿
     else if(B_Dat>160&&G_Dat<230&&2*B_Dat>(R_Dat+G_Dat))                                       {now_color=blue;beep(5);} //蓝
 	  else if((G_Dat-R_Dat)>30&&(G_Dat-R_Dat)<60&&R_Dat>120&&G_Dat>150&&(R_Dat+B_Dat)>G_Dat)     {now_color=black;beep(4);}//黑
-    else if(R_Dat>200&&G_Dat>200&&G_Dat>R_Dat)                                                 {now_color=white;beep(2);}//白 
+    else if(R_Dat>200&&G_Dat>200&&G_Dat>R_Dat)             
+    crazyMe(qianzhua_zuo,180,90,6,120); //ZUOQIAN
+	  crazyMe(qianzhua_you,0,90,6,120);//YOUQIAN                                     {now_color=white;beep(2);}//白 
 }
 /**************************************************************************
 函数功能：任务一中确认任务二颜色发布情况
@@ -499,10 +502,10 @@ void color_distribution_two(void)
 void task_two_catch(void)
 {
 		crazyMe(hozhua_A,160,160,5,80);      
-		crazyMe(hozhua_B,30,30,5,80);
-		crazyMe(hozhua_C,30,30,5,80);      
+		crazyMe(hozhua_B,20,20,5,80);
+		crazyMe(hozhua_C,160,160,5,80);      
 		crazyMe(hozhua_D,30,30,5,80);
-		crazyMe(hozhua_E,160,160,5,80);
+		crazyMe(hozhua_E,40,40,5,80);
 }
 
 /**************************************************************************

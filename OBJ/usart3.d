@@ -3,7 +3,7 @@
 ..\obj\usart3.o: ..\SYSTEM\sys\sys.h
 ..\obj\usart3.o: ..\USER\stm32f4xx.h
 ..\obj\usart3.o: ..\CORE\core_cm4.h
-..\obj\usart3.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\usart3.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\usart3.o: ..\CORE\core_cmInstr.h
 ..\obj\usart3.o: ..\CORE\core_cmFunc.h
 ..\obj\usart3.o: ..\CORE\core_cm4_simd.h
@@ -37,5 +37,5 @@
 ..\obj\usart3.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\usart3.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\usart3.o: ..\IM948\im948_CMD.h
-..\obj\usart3.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\usart3.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\math.h
+..\obj\usart3.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\usart3.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

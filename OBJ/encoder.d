@@ -3,7 +3,7 @@
 ..\obj\encoder.o: ..\SYSTEM\sys\sys.h
 ..\obj\encoder.o: ..\USER\stm32f4xx.h
 ..\obj\encoder.o: ..\CORE\core_cm4.h
-..\obj\encoder.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\encoder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\encoder.o: ..\CORE\core_cmInstr.h
 ..\obj\encoder.o: ..\CORE\core_cmFunc.h
 ..\obj\encoder.o: ..\CORE\core_cm4_simd.h

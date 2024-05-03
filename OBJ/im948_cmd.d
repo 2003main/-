@@ -1,12 +1,12 @@
 ..\obj\im948_cmd.o: ..\IM948\im948_CMD.c
 ..\obj\im948_cmd.o: ..\IM948\im948_CMD.h
-..\obj\im948_cmd.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\im948_cmd.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\math.h
+..\obj\im948_cmd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\im948_cmd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\im948_cmd.o: ..\SYSTEM\Usart3\USART3.h
 ..\obj\im948_cmd.o: ..\SYSTEM\sys\sys.h
 ..\obj\im948_cmd.o: ..\USER\stm32f4xx.h
 ..\obj\im948_cmd.o: ..\CORE\core_cm4.h
-..\obj\im948_cmd.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\im948_cmd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\im948_cmd.o: ..\CORE\core_cmInstr.h
 ..\obj\im948_cmd.o: ..\CORE\core_cmFunc.h
 ..\obj\im948_cmd.o: ..\CORE\core_cm4_simd.h

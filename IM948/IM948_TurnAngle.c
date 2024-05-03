@@ -1,14 +1,17 @@
 #include "IM948_TurnAngle.h"
+#include "time_go.h"
+#include "gray_go.h"
 #include "TB6612.h"
 #include "delay.h"
 #include "im948_CMD.h"
 extern float Yaw; 
+uint8_t angle_now=0;
 void IM948_init()
 {
 	// 唤醒传感器，并配置好传感器工作参数，然后开启主动上报---------------
 
     Cmd_03();// 2 唤醒传感器
-		Cmd_05();
+		Cmd_05();//清空Z轴角度
     /**
        * 设置设备参数
      * @param accStill    惯导-静止状态加速度阀值 单位dm/s?
@@ -37,19 +40,17 @@ void IM948_init()
 
 void ToAngle(int angle)        //暂时未使用PID
 {
-
-		if(angle ==180||angle==-180)
+	if((angle-angle_now)==180)
 	{
-	  if(angle==180)
-		{
-		  ToAngle(90);
-			ToAngle(178);
-		}
-		if(angle==-180)
-		{
-		  ToAngle(-90);
-			ToAngle(-178);
-		}
+		ToAngle(angle_now+90);
+		Time_go(anti_LIAP,300);
+		ToAngle(angle);
+	}
+	else if((angle-angle_now)==-180)
+	{
+		ToAngle(angle_now-90);
+		Time_go(anti_LIAP,300);
+		ToAngle(angle);
 	}
 	else
 	{
@@ -61,7 +62,8 @@ void ToAngle(int angle)        //暂时未使用PID
 				 { 
 					   Set_Motor(-35,35);
 				 }
-				 if(angle>0){	Set_Motor(35,-35);delay_ms(70);Set_Motor(0,0);}
-				 else {Set_Motor(-35,35);delay_ms(70);Set_Motor(0,0);}
+				 if(angle>0){	Set_Motor(35,-35);delay_ms(50);Set_Motor(0,0);}
+				 else {Set_Motor(-35,35);delay_ms(50);Set_Motor(0,0);}
+				 angle_now=angle;
 	}
 }

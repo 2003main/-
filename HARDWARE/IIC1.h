@@ -37,7 +37,7 @@ void TCS34725_IIC_ACK(void);
 void TCS34725_IIC_NACK(void);
 void TCS34725_IIC_write_byte(uint8_t Data);
 uint8_t TCS34725_IIC_read_byte(void);
-
+void TCS34725_GPIO_Init(void)	;
 #endif
 
 

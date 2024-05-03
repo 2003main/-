@@ -3,7 +3,7 @@
 ..\obj\pca9685.o: ..\SYSTEM\sys\sys.h
 ..\obj\pca9685.o: ..\USER\stm32f4xx.h
 ..\obj\pca9685.o: ..\CORE\core_cm4.h
-..\obj\pca9685.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\pca9685.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\pca9685.o: ..\CORE\core_cmInstr.h
 ..\obj\pca9685.o: ..\CORE\core_cmFunc.h
 ..\obj\pca9685.o: ..\CORE\core_cm4_simd.h
@@ -38,6 +38,6 @@
 ..\obj\pca9685.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\pca9685.o: ..\HARDWARE\IIC3.h
 ..\obj\pca9685.o: ..\SYSTEM\delay\delay.h
-..\obj\pca9685.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\math.h
+..\obj\pca9685.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\pca9685.o: ..\SYSTEM\Usart1\Usart1.h
-..\obj\pca9685.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\pca9685.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

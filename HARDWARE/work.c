@@ -433,8 +433,7 @@ void beep(int x)
 **************************************************************************/ 
 void color_discrimination(void)
 {
-	  crazyMe(qianzhua_zuo,90,180,6,120); //ZUOQIAN
-	  crazyMe(qianzhua_you,90,0,6,120);//YOUQIAN 
+
 	  rgb=TCS34725_Get_RGBData();
 		RGB888=TCS34725_GetRGB888(rgb);
 		RGB565=TCS34725_GetRGB565(rgb);
@@ -444,8 +443,7 @@ void color_discrimination(void)
     else if(B_Dat>160&&G_Dat<230&&2*B_Dat>(R_Dat+G_Dat))                                       {now_color=blue;beep(5);} //蓝
 	  else if((G_Dat-R_Dat)>30&&(G_Dat-R_Dat)<60&&R_Dat>120&&G_Dat>150&&(R_Dat+B_Dat)>G_Dat)     {now_color=black;beep(4);}//黑
     else if(R_Dat>200&&G_Dat>200&&G_Dat>R_Dat)             
-    crazyMe(qianzhua_zuo,180,90,6,120); //ZUOQIAN
-	  crazyMe(qianzhua_you,0,90,6,120);//YOUQIAN                                     {now_color=white;beep(2);}//白 
+                                 {now_color=white;beep(2);}//白 
 }
 /**************************************************************************
 函数功能：任务一中确认任务二颜色发布情况

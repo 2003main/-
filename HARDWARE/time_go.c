@@ -6,7 +6,7 @@
 #include "gray_go.h"
 int test_val;
 int yaw_count;
-void anti_TIM3_IRQHandler(void)
+void TIM3_IRQHandler(void)
 {
     if(TIM_GetITStatus(TIM3,TIM_IT_Update)!=RESET)  //≈–∂œ÷–∂œ¿¥‘¥
 		{

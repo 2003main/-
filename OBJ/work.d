@@ -3,7 +3,7 @@
 ..\obj\work.o: ..\SYSTEM\sys\sys.h
 ..\obj\work.o: ..\USER\stm32f4xx.h
 ..\obj\work.o: ..\CORE\core_cm4.h
-..\obj\work.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\work.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\work.o: ..\CORE\core_cmInstr.h
 ..\obj\work.o: ..\CORE\core_cmFunc.h
 ..\obj\work.o: ..\CORE\core_cm4_simd.h
@@ -49,5 +49,5 @@
 ..\obj\work.o: ..\SYSTEM\delay\delay.h
 ..\obj\work.o: ..\HARDWARE\beep.h
 ..\obj\work.o: ..\HARDWARE\oled.h
-..\obj\work.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\work.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\work.o: ..\IM948\IM948_TurnAngle.h

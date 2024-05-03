@@ -1,7 +1,7 @@
 ..\obj\usart6.o: ..\SYSTEM\Usart6\Usart6.c
 ..\obj\usart6.o: ..\USER\stm32f4xx.h
 ..\obj\usart6.o: ..\CORE\core_cm4.h
-..\obj\usart6.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\usart6.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\usart6.o: ..\CORE\core_cmInstr.h
 ..\obj\usart6.o: ..\CORE\core_cmFunc.h
 ..\obj\usart6.o: ..\CORE\core_cm4_simd.h
@@ -34,8 +34,8 @@
 ..\obj\usart6.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\usart6.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\usart6.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
-..\obj\usart6.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\string.h
+..\obj\usart6.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\usart6.o: ..\SYSTEM\Usart6\Usart6.h
-..\obj\usart6.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\usart6.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\usart6.o: ..\HARDWARE\bool.h
 ..\obj\usart6.o: ..\HARDWARE\LobotSerialServo.h

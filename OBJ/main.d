@@ -1,8 +1,9 @@
 ..\obj\main.o: main.c
+..\obj\main.o: ..\CAR_SYS\CAR_SYS.h
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\USER\stm32f4xx.h
 ..\obj\main.o: ..\CORE\core_cm4.h
-..\obj\main.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\main.o: ..\CORE\core_cmInstr.h
 ..\obj\main.o: ..\CORE\core_cmFunc.h
 ..\obj\main.o: ..\CORE\core_cm4_simd.h
@@ -37,11 +38,10 @@
 ..\obj\main.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\SYSTEM\Usart1\Usart1.h
-..\obj\main.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\main.o: ..\SYSTEM\Usart3\Usart3.h
 ..\obj\main.o: ..\HARDWARE\led.h
 ..\obj\main.o: ..\HARDWARE\TB6612.h
-..\obj\main.o: ..\HARDWARE\encoder.h
 ..\obj\main.o: ..\SYSTEM\Usart6\Usart6.h
 ..\obj\main.o: ..\HARDWARE\bool.h
 ..\obj\main.o: ..\HARDWARE\LobotSerialServo.h
@@ -49,7 +49,7 @@
 ..\obj\main.o: ..\HARDWARE\PCA9685.h
 ..\obj\main.o: ..\HARDWARE\IIC3.h
 ..\obj\main.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\main.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\main.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 ..\obj\main.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\main.o: ..\FreeRTOS\include\portable.h
@@ -66,8 +66,7 @@
 ..\obj\main.o: ..\SYSTEM\Uart5\Uart5.h
 ..\obj\main.o: ..\HARDWARE\Servo.h
 ..\obj\main.o: ..\HARDWARE\oled.h
-..\obj\main.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\main.o: ..\HARDWARE\BMP.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\main.o: ..\MPU6050\MPU6050.h
 ..\obj\main.o: ..\MPU6050\IIC2.h
 ..\obj\main.o: ..\MPU6050\inv_mpu.h
@@ -77,5 +76,5 @@
 ..\obj\main.o: ..\HARDWARE\work.h
 ..\obj\main.o: ..\HARDWARE\bsys.h
 ..\obj\main.o: ..\IM948\im948_CMD.h
-..\obj\main.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\math.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\main.o: ..\IM948\IM948_TurnAngle.h

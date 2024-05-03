@@ -10,7 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -184,6 +184,8 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>2</RvdsVP>
+            <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -324,6 +326,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -336,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\HARDWARE;..\SYSTEM\Usart1;..\SYSTEM\Usart6;..\FreeRTOS\include;..\FreeRTOS\portable\RVDS\ARM_CM4F;..\SYSTEM\Uart5;..\SYSTEM\Uart4;..\BALANCE;..\MPU6050;..\IM948;..\SYSTEM\Usart3</IncludePath>
+              <IncludePath>..\CORE;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\HARDWARE;..\SYSTEM\Usart1;..\SYSTEM\Usart6;..\FreeRTOS\include;..\FreeRTOS\portable\RVDS\ARM_CM4F;..\SYSTEM\Uart5;..\SYSTEM\Uart4;..\BALANCE;..\MPU6050;..\IM948;..\SYSTEM\Usart3;..\CAR_SYS</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -349,7 +352,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
+            <ClangAsOpt>4</ClangAsOpt>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -399,6 +402,11 @@
               <FileName>work.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\work.c</FilePath>
+            </File>
+            <File>
+              <FileName>readme.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\readme.txt</FilePath>
             </File>
           </Files>
         </Group>
@@ -509,11 +517,6 @@
               <FileName>bsys.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\bsys.c</FilePath>
-            </File>
-            <File>
-              <FileName>encoder.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\encoder.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -829,6 +832,16 @@
               <FileName>IM948_TurnAngle.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\IM948\IM948_TurnAngle.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>CAR_SYS</GroupName>
+          <Files>
+            <File>
+              <FileName>CAR_SYS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CAR_SYS\CAR_SYS.c</FilePath>
             </File>
           </Files>
         </Group>

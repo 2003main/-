@@ -3,7 +3,7 @@
 ..\obj\tb6612.o: ..\SYSTEM\sys\sys.h
 ..\obj\tb6612.o: ..\USER\stm32f4xx.h
 ..\obj\tb6612.o: ..\CORE\core_cm4.h
-..\obj\tb6612.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\tb6612.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\tb6612.o: ..\CORE\core_cmInstr.h
 ..\obj\tb6612.o: ..\CORE\core_cmFunc.h
 ..\obj\tb6612.o: ..\CORE\core_cm4_simd.h

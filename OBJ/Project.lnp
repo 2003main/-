@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 "..\obj\main.o"
 "..\obj\stm32f4xx_it.o"
 "..\obj\system_stm32f4xx.o"
@@ -22,7 +22,6 @@
 "..\obj\time_go.o"
 "..\obj\timer.o"
 "..\obj\bsys.o"
-"..\obj\encoder.o"
 "..\obj\delay.o"
 "..\obj\sys.o"
 "..\obj\usart1.o"
@@ -80,6 +79,7 @@
 "..\obj\sixe_angle.o"
 "..\obj\im948_cmd.o"
 "..\obj\im948_turnangle.o"
+"..\obj\car_sys.o"
 --strict --scatter "..\OBJ\Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

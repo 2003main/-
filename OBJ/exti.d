@@ -3,7 +3,7 @@
 ..\obj\exti.o: ..\SYSTEM\sys\sys.h
 ..\obj\exti.o: ..\USER\stm32f4xx.h
 ..\obj\exti.o: ..\CORE\core_cm4.h
-..\obj\exti.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\exti.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\exti.o: ..\CORE\core_cmInstr.h
 ..\obj\exti.o: ..\CORE\core_cmFunc.h
 ..\obj\exti.o: ..\CORE\core_cm4_simd.h
@@ -39,10 +39,10 @@
 ..\obj\exti.o: ..\SYSTEM\delay\delay.h
 ..\obj\exti.o: ..\HARDWARE\key.h
 ..\obj\exti.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\exti.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\exti.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\exti.o: ..\FreeRTOS\include\FreeRTOSConfig.h
 ..\obj\exti.o: ..\SYSTEM\Usart1\Usart1.h
-..\obj\exti.o: D:\keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\exti.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\exti.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\exti.o: ..\FreeRTOS\include\portable.h
 ..\obj\exti.o: ..\FreeRTOS\include\deprecated_definitions.h
